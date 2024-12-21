@@ -34,7 +34,4 @@ public class Candidate {
     @JoinColumn(name = "address", nullable = false)
     private Address address;
 
-    @OneToMany(mappedBy = "can")
-    private List<CandidateSkill> candidateSkills = new ArrayList<>();
-
 }
